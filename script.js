@@ -1,7 +1,6 @@
 function getComputerChoise()
 {
     numGenerated = Math.random();
-    console.log("number generated",numGenerated);
     if(numGenerated > 0 && numGenerated<0.33){
        return "rock"
     }
@@ -24,7 +23,7 @@ function getHumanChoice(){
     }
 
 function playRound(humanChoise, computerChoise){
-    console.log(`computer choice ${computerChoise}, human choice ${humanChoise}`);
+    console.log(`computer choice ${computerChoise}, Your choice ${humanChoise}`);
 
     if(humanChoise === computerChoise){
         console.log("tie");
@@ -47,3 +46,5 @@ for(let i = 0; i < 5; i++){
     const humanSelection = getHumanChoice();
     playRound(humanSelection.toLowerCase(), computerSelection);
 }
+
+console.log(`final score human wins ${humanScore} and computer wins ${computerScore}`);
