@@ -12,16 +12,6 @@ function getComputerChoise()
     }
 }
 
-// function getHumanChoice(userChoice){
-//     let choice = userChoice
-//     choice = choice || "null";
-//     if(choice == "null"){
-//         alert("default choice rock");
-//         return "rock";
-//     }
-//     return choice;
-//     }
-
 function playRound(humanChoise, computerChoise){
     console.log(`computer choice ${computerChoise}, Your choice ${humanChoise}`);
 
@@ -72,17 +62,7 @@ scissor.classList.add("choiceButton","scissor")
 scissor.textContent = "scissor";
 container.appendChild(scissor);
 
-// rock.addEventListener("click",()=>{
-//     playRound("rock",getComputerChoise());
-// })
 
-// paper.addEventListener("click",()=>{
-//     playRound("paper",getComputerChoise());
-// })
-
-// scissor.addEventListener("click",()=>{
-//     playRound("scissors",getComputerChoise());
-// })
 
 const list = document.createElement("ul")
 list.classList.add("resultList");
